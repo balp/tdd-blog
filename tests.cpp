@@ -2,6 +2,7 @@
 #include "gtest/gtest.h"
 
 TEST(timeofday, midnighthavehourzero) {
-    TimeOfDay test(12, 0);
-    EXPECT_EQ(12, test.hour());
+    int hour = 12;
+    TimeOfDay test(hour, 0);
+    EXPECT_EQ(hour, test.hour());
 }
